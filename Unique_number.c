@@ -1,4 +1,3 @@
-//A num is said to be a unique number if its digits were not repeated 
 #include<stdio.h>
 #include<math.h>
 int main()
