@@ -1,22 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,alt,d,N=0;
+    int n,d,alt,rev=0;
     scanf("%d",&n);
     alt=n;
-    while(n)
+    while(alt)
     {
-        d=n%10;
-        n=n/10;
-        N=N*10+d;
+        d=alt%10;
+        alt=alt/10;
+        rev=rev*10+d;
     }
-    if(n<0)
-    {
-        printf("%d",N*-1);
-    }
-    else
-    {
-        
-        printf("%d",N);
-    }
+        printf("%d",rev);
 }
