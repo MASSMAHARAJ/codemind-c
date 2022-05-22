@@ -1,26 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int i,n,m,min;
-    scanf("%d%d",&n,&m);
-    if(n<m)
+    int min,a,b;
+    scanf("%d%d",&a,&b);
+    if(a>b)
     {
-        min=n;
+        min=b;
     }
     else
     {
-        min=m;
+        min=a;
     }
-    while(min)
+    while(a%min!=0 || b%min!=0)
     {
-        if(n%min==0 && m%min==0)
-        {
-            printf("%d",min);
-            break;
-        }
-        else
-        {
-            min--;    
-        }
+        min--;
     }
+    printf("%d",min);
 }
