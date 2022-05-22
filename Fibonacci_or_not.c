@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int n,n1,n2,k,c1=0,c2=0;
+    scanf("%d",&k);
+    n1=0;
+    n2=1;
+    n=n1+n2;
+    while(k>=n)
+    {
+        c1++;
+        if(k==n)
+        {
+            printf("True");
+            break;
+        }
+        else
+        {
+            n1=n2;
+            n2=n;
+            n=n1+n2;
+            c2++;
+        }
+    }
+    if(c1==c2)
+    {
+        printf("False");
+    }
+}
