@@ -1,32 +1,33 @@
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-	int alt,n,i,d=0,d1,d2,k=0;
-    	scanf("%d",&n);//1234
-    	i=n;
-    	while(n)//n=12
-	{
-    		d1=n%10;//d1=2
-		n=n/10; //1
-		d++;//3
-		alt=i;//1234
-		while(alt)//0
-	  	{
-	  		d2=alt%10;//1
-	  		alt=alt/10;//1
-			if(d1==d2)// 2==2 
-	  		{
-	  			k++;//3
-			}
-	  	}
-	}
-	if(k==d)
-	{
-		printf("Unique Number");
-	}
-	else
-	{
-		printf("Not Unique Number");
-	}
+    int stop=0,n,d1,d2,alt1,alt2,rc=0,c=0,dc=0;
+    scanf("%d",&n);
+    alt1=n;
+    alt2=n;
+    while(alt1)
+    {
+        d1=alt1%10;
+        alt1=alt1/10;
+        dc++;
+        rc=0;
+        alt2=n;
+        while(alt2)
+        {
+            d2=alt2%10;
+            alt2=alt2/10;
+            if(d1==d2)
+            {
+                c++;
+            }
+        }
+    }
+    if(c==dc)
+    {
+        printf("Unique Number");
+    }
+    else
+    {
+        printf("Not Unique Number");
+    }
 }
