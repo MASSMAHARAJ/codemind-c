@@ -2,12 +2,12 @@
 #include<math.h>
 int main()
 {
-    int n,a;
-    float b;
+    int i,n;
+    float f;
     scanf("%d",&n);
-    a=sqrt(n);
-    b=sqrt(n);
-    if(a==b)
+    i=sqrt(n);
+    f=sqrt(n);
+    if(i==f)
     {
         printf("True");
     }
