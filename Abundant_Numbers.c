@@ -1,3 +1,4 @@
+//Abundant Number:the number which is less than the sum of its factors.
 #include<stdio.h>
 int main()
 {
