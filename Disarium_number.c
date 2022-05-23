@@ -1,3 +1,4 @@
+//Disarium Number:A number is said to be disarium if the sum of the digits raised to the power of their position equal to it.
 #include<stdio.h>
 #include<math.h>
 int main()
